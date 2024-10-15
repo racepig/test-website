@@ -2,4 +2,4 @@
 a test website for odin project
 
 
-List of credit for images I used.
+List of credit for images I used:
