@@ -26,7 +26,7 @@ body {
 
 .header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .header ul {
@@ -37,8 +37,8 @@ body {
 }
 
 .header li {
-    margin-left: 20px;
-    font-size: 48px;
+    margin-left: 2rem;
+    font-size: 3rem;
 }
 
 .header li a {
@@ -61,7 +61,7 @@ body {
 
 .links {
     display: flex;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .body{
@@ -77,43 +77,43 @@ body {
     align-items: center;
     background-color: #263448;
     color: #F9FAF8;
-    padding: 10px 20px;
-    padding-bottom: 75px;
-    padding-left: 60px;
+    padding: 3rem;
 }
 
 .first img{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     height: auto;
-    margin: 20px;
+    margin: 1rem;
     border-radius: 30px;
 }
 
 .title{
-    font-size: 100px;
+    font-size: 7rem;
     font-weight: 900;
 }
+
 .text {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.5;
     letter-spacing: .5px;
-    margin: 20px 0;
+    margin: 2rem 0;
     margin-right: 150px;
-    padding: 10px;
+    padding: 1rem;
     text-align: justify;
     background-color: #1f2937bd;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 .button {
     background-color: #2563EB;
     color: #F9FAF8;
-    padding: 20px 60px;
-    margin-left: 60px;
+    padding: 1.5rem 3rem;
+    margin-left: 6rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 3rem;
     transition: background-color 0.5s;
     transition: transform 0.5s;
 }
