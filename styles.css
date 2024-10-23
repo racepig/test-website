@@ -10,13 +10,14 @@ body {
     justify-content: space-between;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
 }
 
 .header img {
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
-    margin: 10px;
+    margin: 1rem;
     transition: transform 0.3s;
 }
 .header img:hover {
@@ -25,7 +26,7 @@ body {
 
 .header h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .header ul {
