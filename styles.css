@@ -80,7 +80,6 @@ body {
     align-items: center;
     background-color: #263448;
     color: #F9FAF8;
-    padding: 3rem;
     width: 100%;
 }
 
@@ -125,4 +124,20 @@ body {
 .button:hover {
     background-color: #1E40AF;
     transform: scale(1.1);
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAF8;
+    color: #1F2937;
+    padding: 3rem;
+    width: 100%;
+}
+.second img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    margin: 1rem;
 }
