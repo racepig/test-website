@@ -98,7 +98,7 @@ body {
     margin: 3rem;
 }
 
-.text {
+.first .text {
     font-size: 2rem;
     line-height: 1.5;
     letter-spacing: .5px;
@@ -130,6 +130,7 @@ body {
 
 .second {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F9FAF8;
@@ -137,9 +138,40 @@ body {
     padding: 3rem;
     width: 100%;
 }
-.second img {
+.top {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 2rem;
+    text-align: center;
+}
+.pics img {
     width: auto;
-    max-width: 100px;
+    max-width: 400px;
     height: auto;
     margin: 1rem;
+    border-radius: 30px;
+    margin-bottom: 4rem;
+}
+.phone img {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    margin: 1rem;
+    border-radius: 30px;
+    margin-bottom: 4rem;
+}
+.pics .text {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin: 1.5rem;
+    margin-right: 150px;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
 }
