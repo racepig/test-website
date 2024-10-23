@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, 'Times New Roman', Times, serif;
 }
 
 .header {
@@ -11,10 +11,11 @@ body {
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 1rem 2rem;
+    width: 100%;
 }
 
 .header img {
-    width: 100%;
+    width: auto;
     max-width: 100px;
     height: auto;
     margin: 1rem;
@@ -39,6 +40,7 @@ body {
 .header li {
     margin-left: 2rem;
     font-size: 3rem;
+    padding: 1rem;
 }
 
 .header li a {
@@ -78,10 +80,11 @@ body {
     background-color: #263448;
     color: #F9FAF8;
     padding: 3rem;
+    width: 100%;
 }
 
 .first img{
-    width: 100%;
+    width: auto;
     max-width: 900px;
     height: auto;
     margin: 1rem;
