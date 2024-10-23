@@ -88,20 +88,21 @@ body {
     width: auto;
     max-width: 900px;
     height: auto;
-    margin: 1rem;
+    margin: 3rem;
     border-radius: 30px;
 }
 
 .title{
     font-size: 7rem;
     font-weight: 900;
+    margin: 3rem;
 }
 
 .text {
     font-size: 2rem;
     line-height: 1.5;
     letter-spacing: .5px;
-    margin: 2rem 0;
+    margin: 3rem;
     margin-right: 150px;
     padding: 1rem;
     text-align: justify;
