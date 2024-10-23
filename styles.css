@@ -17,6 +17,10 @@ body {
     width: 100px;
     height: auto;
     margin: 10px;
+    transition: transform 0.3s;
+}
+.header img:hover {
+    transform: scale(1.1);
 }
 
 .header h1 {
@@ -39,11 +43,14 @@ body {
 .header li a {
     text-decoration: none;
     color: #F9FAF8;
-    transition: color 0.3s; 
+    transition: color 0.5s; 
+    display: inline-block;
+    transition: transform 0.3s;
 }
 
 .header li a:hover {
-    color: #E5E7EB;
+    color: #6394f7;
+    transform: scale(1.1);
 }
 
 .logo {
@@ -58,4 +65,59 @@ body {
 
 .body{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #263448;
+    color: #F9FAF8;
+    padding: 10px 20px;
+    padding-bottom: 75px;
+    padding-left: 60px;
+}
+
+.first img{
+    width: 900px;
+    height: auto;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.title{
+    font-size: 100px;
+    font-weight: 900;
+}
+.text {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin: 20px 0;
+    margin-right: 150px;
+    padding: 10px;
+    text-align: justify;
+    background-color: #1f2937bd;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.button {
+    background-color: #2563EB;
+    color: #F9FAF8;
+    padding: 20px 60px;
+    margin-left: 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: background-color 0.5s;
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    background-color: #1E40AF;
+    transform: scale(1.1);
 }
