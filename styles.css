@@ -14,20 +14,21 @@ body {
     width: 100%;
 }
 
-.header img {
+.header .logo {
     width: auto;
     max-width: 100px;
     height: auto;
     margin: 1rem;
     transition: transform 0.3s;
 }
-.header img:hover {
-    transform: scale(1.1);
+.header .name {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem;
 }
-
-.header h1 {
-    margin: 0;
-    font-size: 5rem;
+.header .logo :hover {
+    transform: scale(1.1);
 }
 
 .header ul {
