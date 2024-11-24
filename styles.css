@@ -16,7 +16,7 @@ body {
 
 .header .logo {
     width: auto;
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
     margin: 1rem;
     transition: transform 0.3s;
