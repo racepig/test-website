@@ -82,21 +82,19 @@ body {
 }
 
 .first {
-    display: flex; /* Aligns child elements side by side */
+    display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     background-color: #263448;
     color: #F9FAF8;
     width: 100%;
     padding-bottom: 5rem;
-
- /* Adds space between image and content */
 }
 
 .title {
-    font-size: 4vw; /* Responsive scaling */
+    font-size: 4vw;
     font-weight: 900;
-    margin: 3rem 10rem; /* Adjust margins */
+    margin: 3rem 10rem;
 }
 .first img {
     max-width: auto;
@@ -110,8 +108,8 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column; /* Stacks text and button vertically */
-    align-items: flex-start; /* Aligns content to the left */
+    flex-direction: column;
+    align-items: flex-start;
     margin: 3rem 10rem 4rem 10rem;
 }
 
@@ -153,61 +151,62 @@ body {
     width: 100%;
 }
 .top {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
 }
 .pics {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: flex-start;
     margin: 2rem;
+    width: 100%;
     text-align: center;
 }
 .pics img {
-    width: auto;
-    max-width: 400px;
-    height: auto;
-    margin: 1rem;
-    border-radius: 30px;
-    margin-bottom: 4rem;
-}
-.phone img {
     width: auto;
     max-width: 600px;
     height: auto;
     margin: 1rem;
     border-radius: 30px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .pics .text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     letter-spacing: .5px;
-    margin: 1.5rem;
-    margin-right: 150px;
-    padding: 1rem;
     text-align: center;
-    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .third {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #E5E7EB;
     color: #000000;
     width: 100%;
+
 }
 .third p {
-    align-items: center;
-    justify-items: center;
     font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin-top: 5rem;
     margin-left: 10rem;
     margin-right: 10rem;
+    text-align: justify;
+
 }
-.third h4{
-    align-items: right;
-    justify-items: right;
-    font-size: 2rem;
-} 
+.third h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    align-self: flex-end;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 7rem;
+    margin-right: 25%;
+}
