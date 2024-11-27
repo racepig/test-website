@@ -109,8 +109,11 @@ body {
     border-radius: 30px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    transition: transform 0.3s;
 }
-
+.first img:hover {
+    transform: scale(1.25);
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -174,6 +177,10 @@ body {
     margin: 1rem;
     border-radius: 30px;
     margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+.pics img:hover {
+    transform: scale(1.75);
 }
 .pics .text {
     font-size: 2.5rem;
@@ -245,4 +252,20 @@ body {
     width: 100%;
     margin-bottom: 7rem;
     margin-right: 25%;
+}
+.fourth .but {
+    background-color: #2563EB;
+    color: #F9FAF8;
+    padding: 1.5rem 3rem;
+    margin-left: 25rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.fourth .but:hover {
+    background-color: #1E40AF;
+    transform: scale(1.1);
 }
