@@ -1,8 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: Arial, 'Times New Roman', Times, serif;
 }
+
 
 .header {
     display: flex;
@@ -10,15 +12,17 @@ body {
     justify-content: space-between;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 1rem 2rem;
     width: 100%;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.header .logo {
+.header .logos {
     width: auto;
     max-width: 150px;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 0 1rem 10rem;
     transition: transform 0.3s;
 }
 .header .name {
@@ -27,7 +31,7 @@ body {
     height: auto;
     margin: 1rem;
 }
-.header .logo :hover {
+.header .logos:hover {
     transform: scale(1.1);
 }
 
@@ -47,10 +51,9 @@ body {
 .header li a {
     text-decoration: none;
     color: #F9FAF8;
-    transition: color 0.5s; 
+    transition: color 0.5s, transform 0.3s; 
     display: inline-block;
-    transition: transform 0.3s;
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
 }
 
 .header li a:hover {
@@ -65,66 +68,74 @@ body {
 
 .links {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 15rem;
 }
 
-.body{
+.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .first {
-    display: flex;
+    display: flex; /* Aligns child elements side by side */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items at the top */
     background-color: #263448;
     color: #F9FAF8;
     width: 100%;
     padding-bottom: 5rem;
+
+ /* Adds space between image and content */
 }
 
-.first img{
-    width: auto;
-    max-width: 900px;
-    height: auto;
-    margin: 3rem;
-    border-radius: 30px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, .5); 
-    overflow: hidden;
-
-}
-
-.title{
-    font-size: 7rem;
+.title {
+    font-size: 4vw; /* Responsive scaling */
     font-weight: 900;
+    margin: 3rem 10rem; /* Adjust margins */
+}
+.first img {
+    max-width: auto;
+    height: 750px;
     margin: 3rem;
+    margin-right: 15rem;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stacks text and button vertically */
+    align-items: flex-start; /* Aligns content to the left */
+    margin: 3rem 10rem 4rem 10rem;
 }
 
 .first .text {
-    font-size: 2rem;
-    line-height: 1.5;
-    letter-spacing: .5px;
-    margin: 3rem;
-    margin-right: 150px;
-    padding: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    margin: 3rem 10rem 4rem 10rem;
+    padding: 3rem;
     text-align: justify;
     background-color: #1f2937bd;
     border-radius: 20px;
-    margin-bottom: 4rem;
 }
+
 .button {
     background-color: #2563EB;
     color: #F9FAF8;
     padding: 1.5rem 3rem;
-    margin-left: 6rem;
+    margin-left: 25rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     font-size: 3rem;
-    transition: background-color 0.5s;
-    transition: transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
 .button:hover {
@@ -139,7 +150,6 @@ body {
     align-items: center;
     background-color: #F9FAF8;
     color: #1F2937;
-    padding: 3rem;
     width: 100%;
 }
 .top {
@@ -187,7 +197,6 @@ body {
     align-items: center;
     background-color: #E5E7EB;
     color: #000000;
-    padding: 3rem;
     width: 100%;
 }
 .third p {
