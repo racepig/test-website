@@ -169,6 +169,7 @@ body {
 .top {
     font-size: 5rem;
     margin-bottom: 2rem;
+    font-family: 'ethnocentric RG';
 }
 .pics {
     display: flex;
@@ -260,6 +261,7 @@ body {
 
 .fourth h1 {
     font-family: 'ethnocentric rg';
+    color: white;
     font-size: 5rem;
     font-weight: bold;
     text-align: left; 
@@ -268,6 +270,7 @@ body {
 
 .fourth p {
     font-size: 3rem;
+    color: white;
     text-align: left;
     line-height: 1.5;
     letter-spacing: 0.5px;
@@ -277,17 +280,26 @@ body {
 .fourth .but {
     background-color: #2563EB;
     color: #F9FAF8;
-    padding: 1.5rem 3rem;
+    padding: 3rem 6rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 2rem; 
+    font-size: 6rem; 
     transition: background-color 0.5s, transform 0.5s;
-    align-self: flex-start; 
-    margin-left: 2rem; 
+    align-self: center; 
+    margin-right: 20rem; 
 }
 
 .fourth .but:hover {
     background-color: #1E40AF;
     transform: scale(1.1);
+}
+
+.footer{
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
 }
