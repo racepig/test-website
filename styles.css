@@ -7,7 +7,7 @@
     font-family: 'Ethnocentric RG';
     src: url('other/Ethnocentric-Regular.woff') format('woff'),
         url('other/Ethnocentric-Regular.woff2') format('woff2');
-    font-weight: 900; /* Match your usage */
+    font-weight: 900; 
     font-style: normal;
 }
 body {
@@ -16,6 +16,7 @@ body {
     width: 100%;
     font-family: Arial, 'Times New Roman', Times, serif;
 }
+
 
 .header {
     display: flex;
@@ -51,8 +52,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Makes items wrap on smaller screens */
-    justify-content: center; /* Centers items */
 }
 
 .header li {
@@ -95,27 +94,24 @@ body {
 }
 
 .first {
-    display: grid; /* Use grid for responsiveness */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns */
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: #263448;
     color: #F9FAF8;
     width: 100%;
     padding-bottom: 5rem;
-    gap: 1rem; /* Adds spacing between grid items */
 }
 
 .title {
     font-family: 'ethnocentric RG', sans-serif;
-    font-size: clamp(2rem, 4vw, 6rem); /* Scales dynamically */
+    font-size: 4vw;
     font-weight: 900;
     margin: 3rem 10rem;
 }
 .first img {
     max-width: auto;
-    height: auto; /* Makes it scale */
-    max-height: 750px;
+    height: 750px;
     margin: 3rem;
     margin-right: 15rem;
     border-radius: 30px;
@@ -177,7 +173,6 @@ body {
 }
 .pics {
     display: flex;
-    flex-wrap: wrap; /* Wrap items */
     justify-content: space-around;
     align-items: flex-start;
     margin: 2rem;
@@ -246,7 +241,7 @@ body {
 
 .fourth {
     display: flex;
-    flex-wrap: wrap; /* Makes it wrap on smaller screens */
+    flex-direction: row; 
     justify-content: space-between; 
     align-items: flex-start;
     background-color: #3882f6;
@@ -267,14 +262,14 @@ body {
 .fourth h1 {
     font-family: 'ethnocentric rg';
     color: white;
-    font-size: clamp(3rem, 5vw, 6rem); /* Scales text dynamically */
+    font-size: 5rem;
     font-weight: bold;
     text-align: left; 
     margin-left: 10rem;
 }
 
 .fourth p {
-    font-size: clamp(1.5rem, 2.5vw, 3rem); /* Dynamic paragraph sizing */
+    font-size: 3rem;
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -289,7 +284,7 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: clamp(2rem, 4vw, 6rem); 
+    font-size: 6rem; 
     transition: background-color 0.5s, transform 0.5s;
     align-self: center; 
     margin-right: 20rem; 
@@ -307,55 +302,4 @@ body {
     padding: 4rem;
     justify-content: center;
     align-items: center;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-    .header ul {
-        flex-direction: column;
-        margin: 1rem 0;
-        gap: 1rem;
-    }
-    .header .logos {
-        margin: 0;
-    }
-    .first img {
-        max-height: 300px;
-    }
-    .title {
-        margin: 1rem;
-        font-size: 3vw;
-    }
-    .content, .text, .button {
-        margin: 1rem;
-        font-size: 1.5rem;
-    }
-    .pics img {
-        max-width: 90%;
-        margin: 0.5rem;
-    }
-}
-
-/* Ultrawide Responsiveness */
-@media (min-width: 1600px) {
-    .header .logos {
-        max-width: 200px;
-    }
-    .first img {
-        max-height: 900px;
-    }
-    .content {
-        margin: 5rem 25rem;
-    }
-    .pics img {
-        max-width: 800px;
-    }
-    .text {
-        font-size: 2.5rem;
-    }
 }
