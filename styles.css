@@ -16,6 +16,11 @@ body {
     width: 100%;
     font-family: Arial, 'Times New Roman', Times, serif;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 .header {
