@@ -26,21 +26,21 @@ body {
     color: #F9FAF8;
     width: 100%;
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .header .logos {
     width: auto;
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     transition: transform 0.3s;
 }
 .header .name {
     width: auto;
-    max-width: 320px;
+    max-width: 240px;
     height: auto;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 .header .logos:hover {
     transform: scale(1.1);
@@ -58,7 +58,7 @@ body {
 .header li {
     margin-left: 0;
     font-size: clamp(1rem, 2.2vw, 1.4rem);
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .header li a {
@@ -101,9 +101,25 @@ body {
     background-color: #263448;
     color: #F9FAF8;
     width: 100%;
-    padding: 4rem 2rem 3rem;
+    padding: 4rem 4rem 3rem;
     gap: 2rem;
-    flex-wrap: wrap;
+}
+
+.first .left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first .right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    margin-top: 2rem;
 }
 
 .title {
@@ -113,7 +129,7 @@ body {
     margin: 2rem 1rem;
 }
 .first img {
-    max-width: 45%;
+    max-width: 100%;
     width: 100%;
     height: auto;
     margin: 1rem;
@@ -169,6 +185,7 @@ body {
     background-color: #F9FAF8;
     color: #1F2937;
     width: 100%;
+    padding: 0 4rem;
 }
 .top {
     font-size: clamp(1.6rem, 4vw, 2.8rem);
@@ -179,7 +196,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 2rem 1rem;
+    margin: 2rem 4rem;
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
@@ -223,7 +240,7 @@ body {
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     line-height: 1.6;
     letter-spacing: .3px;
-    margin: 2.5rem 1rem;
+    margin: 2.5rem 4rem;
     text-align: justify;
 
 }
@@ -234,11 +251,11 @@ body {
     align-self: flex-end;
     text-align: right;
     width: 100%;
-    margin: 1rem 1rem 3rem 1rem;
+    margin: 1rem 4rem 3rem 4rem;
 }
 .fourth-container {
     background-color: #ffffff; 
-    padding: 3rem 1rem;
+    padding: 3rem 4rem;
     box-sizing: border-box; 
     width: 100%;
 }
@@ -252,9 +269,9 @@ body {
     color: #000000;
     width: 100%;
     border-radius: 20px;
-    padding: 1.5rem; 
+    padding: 2rem 2.5rem; 
     box-sizing: border-box;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .fourth .text-container {
@@ -285,7 +302,7 @@ body {
 .fourth .but {
     background-color: #2563EB;
     color: #F9FAF8;
-    padding: 0.8rem 1.25rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -293,6 +310,7 @@ body {
     transition: background-color 0.5s, transform 0.5s;
     align-self: center; 
     margin: 0;
+    white-space: nowrap;
 }
 
 .fourth .but:hover {
@@ -304,9 +322,15 @@ body {
     display: flex;
     background-color: #1F2937;
     color: white;
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     justify-content: center;
     align-items: center;
+    font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+}
+
+.footer h1 {
+    font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+    margin: 0;
 }
 
 /* Responsive adjustments */
@@ -318,8 +342,8 @@ body {
         text-align: center;
     }
     .links { margin-right: 0; }
-    .first { flex-direction: column-reverse; align-items: center; }
-    .first img { max-width: 90%; }
+    .first { flex-direction: column; align-items: center; }
+    .first .left, .first .right { flex: 1; min-width: 100%; }
     .pic-item { width: calc(50% - 1rem); }
     .fourth { flex-direction: column; align-items: stretch; }
     .fourth .text-container { width: 100%; }
