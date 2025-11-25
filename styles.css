@@ -211,7 +211,7 @@ body {
     transition: transform 0.3s;
 }
 .pics img:hover {
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 .pic-item {
     width: calc(25% - 1rem);
@@ -277,7 +277,7 @@ body {
 .fourth .text-container {
     display: flex;
     flex-direction: column; 
-    width: 70%; 
+    width: 60%;
     padding: 1rem 1rem;
 }
 
@@ -302,14 +302,14 @@ body {
 .fourth .but {
     background-color: #2563EB;
     color: #F9FAF8;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     border: none;
-    border-radius: 16px;
+    border-radius: 18px;
     cursor: pointer;
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: clamp(1.4rem, 4vw, 2rem);
     transition: background-color 0.5s, transform 0.5s;
     align-self: center; 
-    margin: 0;
+    margin: 0 0 0 1rem;
     white-space: nowrap;
 }
 
