@@ -336,7 +336,7 @@ body {
     margin: 0;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
     .header {
         flex-direction: column;
@@ -361,8 +361,33 @@ body {
     .third p, .pics .text { font-size: 0.95rem; }
 }
 
-/* Ensure footer sticks to bottom on short pages */
 body > .footer {
     margin-top: auto;
 }
 
+.about_first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #263448;
+    color: #F9FAF8;
+    width: 100%;
+    padding: 4rem 4rem 3rem;
+    gap: 2rem;
+}
+.CEO_left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CEO_right{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    margin-top: 2rem;
+}
