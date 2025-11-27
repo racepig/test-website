@@ -14,6 +14,9 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, 'Times New Roman', Times, serif;
 }
 
@@ -356,5 +359,10 @@ body {
     .pics { gap: 0.5rem; }
     .pic-item { width: 100%; }
     .third p, .pics .text { font-size: 0.95rem; }
+}
+
+/* Ensure footer sticks to bottom on short pages */
+body > .footer {
+    margin-top: auto;
 }
 
