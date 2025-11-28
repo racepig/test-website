@@ -173,12 +173,7 @@ body {
 .first img:hover {
     transform: scale(1.05);
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 1rem;
-}
+
 
 .first .text {
     font-size: clamp(1rem, 2.4vw, 1.25rem);
