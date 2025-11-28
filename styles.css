@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'Ethnocentric RG';
     src: url('other/Ethnocentric-Regular.woff') format('woff'),
@@ -10,6 +11,31 @@
     font-weight: 900; 
     font-style: normal;
 }
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .links { margin-right: 0; }
+    .first { flex-direction: column; align-items: center; }
+    .first .left, .first .right { flex: 1; min-width: 100%; }
+    .pic-item { width: calc(50% - 1rem); }
+    .fourth { flex-direction: column; align-items: stretch; }
+    .fourth .text-container { width: 100%; }
+    .fourth .but { margin: 1rem auto 0 auto; }
+}
+
+@media (max-width: 480px) {
+    .header li { font-size: 0.95rem; }
+    .title { font-size: clamp(1.4rem, 6vw, 1.8rem); }
+    .pics { gap: 0.5rem; }
+    .pic-item { width: 100%; }
+    .third p, .pics .text { font-size: 0.95rem; }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +45,6 @@ body {
     flex-direction: column;
     font-family: Arial, 'Times New Roman', Times, serif;
 }
-
 
 .header {
     display: flex;
@@ -39,12 +64,14 @@ body {
     margin: 0 0.5rem;
     transition: transform 0.3s;
 }
+
 .header .name {
     width: auto;
     max-width: 240px;
     height: auto;
     margin: 0 0.5rem;
 }
+
 .header .logos:hover {
     transform: scale(1.1);
 }
@@ -195,12 +222,14 @@ body {
     width: 100%;
     padding: 0 4rem;
 }
+
 .top {
     font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-family: 'ethnocentric RG';
 }
+
 .pics {
     display: flex;
     justify-content: space-around;
@@ -213,6 +242,7 @@ body {
     max-width: none;
     gap: 1rem;
 }
+
 .pics img {
     width: 100%;
     max-width: 100%;
@@ -221,14 +251,17 @@ body {
     border-radius: 16px;
     transition: transform 0.3s;
 }
+
 .pics img:hover {
     transform: scale(1.25);
 }
+
 .pic-item {
     width: calc(25% - 1rem);
     box-sizing: border-box;
     padding: 0.5rem;
 }
+
 .pics .text {
     font-size: clamp(0.9rem, 1.8vw, 1.25rem);
     line-height: 1.4;
@@ -250,6 +283,7 @@ body {
     
 
 }
+
 .third p {
     font-size: clamp(1.15rem, 2.4vw, 1.4rem);
     line-height: 1.6;
@@ -258,6 +292,7 @@ body {
     text-align: justify;
 
 }
+
 .third h4 {
     font-size: clamp(1.25rem, 2.4vw, 1.5rem);
     font-weight: 600;
@@ -267,6 +302,7 @@ body {
     width: 100%;
     margin: 1rem 4rem 3rem 4rem;
 }
+
 .fourth-container {
     background-color: #ffffff; 
     padding: 3rem 4rem;
@@ -351,31 +387,6 @@ body {
     margin: 0;
 }
 
-
-@media (max-width: 900px) {
-    .header {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem 0;
-        text-align: center;
-    }
-    .links { margin-right: 0; }
-    .first { flex-direction: column; align-items: center; }
-    .first .left, .first .right { flex: 1; min-width: 100%; }
-    .pic-item { width: calc(50% - 1rem); }
-    .fourth { flex-direction: column; align-items: stretch; }
-    .fourth .text-container { width: 100%; }
-    .fourth .but { margin: 1rem auto 0 auto; }
-}
-
-@media (max-width: 480px) {
-    .header li { font-size: 0.95rem; }
-    .title { font-size: clamp(1.4rem, 6vw, 1.8rem); }
-    .pics { gap: 0.5rem; }
-    .pic-item { width: 100%; }
-    .third p, .pics .text { font-size: 0.95rem; }
-}
-
 body > .footer {
     margin-top: auto;
 }
@@ -390,6 +401,7 @@ body > .footer {
     padding: 4rem 4rem 3rem;
     gap: 2rem;
 }
+
 .CEO_left {
     flex: 1;
     min-width: 300px;
