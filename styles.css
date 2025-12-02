@@ -435,3 +435,84 @@ body > .footer {
     overflow: hidden;
     transition: transform 0.3s;
 }
+
+/* Center CEO name/title under the image */
+.CEO_name {
+    align-self: center;
+    text-align: center;
+    margin: 0.75rem 1rem 0;
+}
+.CEO_title h1 { margin: 0; }
+.CEO_title h2 { margin: 0.25rem 0 0; font-weight: 500; }
+
+/* About page additional sections */
+.about_second,
+.about_third {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #263448;
+    color: #F9FAF8;
+    width: 100%;
+    padding: 4rem 4rem 3rem;
+    gap: 2rem;
+}
+
+.about_second .left,
+.about_second .right,
+.about_third .left,
+.about_third .right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.about_second img,
+.about_third img {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Show more of the left side on Our Story image */
+.about_second img {
+    object-position: left center;
+}
+
+.about_text {
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin: 1rem 0;
+    padding: 1.25rem;
+    text-align: justify;
+    background-color: #1f2937bd;
+    border-radius: 12px;
+    max-width: 800px;
+}
+
+/* Ensure section titles match index page spacing */
+.about_first .title,
+.about_second .title,
+.about_third .title {
+    margin: 1rem 1rem;
+}
+
+@media (max-width: 900px) {
+    .about_first,
+    .about_second,
+    .about_third { flex-direction: column; align-items: center; }
+    .about_first > *,
+    .about_second > *,
+    .about_third > * { min-width: 100%; }
+}
