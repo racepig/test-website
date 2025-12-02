@@ -234,6 +234,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin: 2rem 4rem;
     width: 100%;
     text-align: center;
@@ -257,7 +258,7 @@ body {
 }
 
 .pic-item {
-    width: calc(25% - 1rem);
+    width: calc(50% - 1rem);
     box-sizing: border-box;
     padding: 0.5rem;
 }
