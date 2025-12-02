@@ -61,6 +61,8 @@ body {
     width: auto;
     max-width: 100px;
     height: auto;
+    max-height: 48px;
+    display: block;
     margin: 0 0.5rem;
     transition: transform 0.3s;
 }
@@ -69,6 +71,8 @@ body {
     width: auto;
     max-width: 240px;
     height: auto;
+    max-height: 48px;
+    display: block;
     margin: 0 0.5rem;
 }
 
