@@ -429,14 +429,14 @@ body > .footer {
     height: 500px;
     object-fit: cover;
     object-position: top;
-    margin: 0; /* rely on section gap for spacing */
+    margin: 0;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
     overflow: hidden;
     transition: transform 0.3s;
 }
 
-/* Center CEO name/title under the image */
+
 .CEO_name {
     align-self: center;
     text-align: center;
@@ -446,12 +446,12 @@ body > .footer {
 .CEO_name h1 { font-family: 'ethnocentric RG', sans-serif; }
 .CEO_title h2 { margin: 0.25rem 0 0; font-weight: 500; }
 
-/* About page additional sections */
+
 .about_second,
 .about_third {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     background-color: #263448;
     color: #F9FAF8;
     width: 100%;
@@ -478,16 +478,20 @@ body > .footer {
     height: 500px;
     object-fit: cover;
     object-position: top;
-    margin: 0; /* rely on section gap for spacing */
+    margin: 0; 
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
     overflow: hidden;
     transition: transform 0.3s;
 }
 
-/* Show more of the left side on Our Story image */
-.about_second img {
-    object-position: left center;
+
+.about_second .right { display: flex; align-items: stretch; }
+.about_second .right img {
+    height: 100%;
+    min-height: 600px; 
+    object-fit: cover;
+    object-position: 20% center; 
 }
 
 .about_text {
@@ -502,7 +506,7 @@ body > .footer {
     max-width: 800px;
 }
 
-/* Ensure section titles match index page spacing */
+
 .about_first .title,
 .about_second .title,
 .about_third .title {
