@@ -429,7 +429,7 @@ body > .footer {
     height: 500px;
     object-fit: cover;
     object-position: top;
-    margin: 0 1rem;
+    margin: 0; /* rely on section gap for spacing */
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
     overflow: hidden;
@@ -478,7 +478,7 @@ body > .footer {
     height: 500px;
     object-fit: cover;
     object-position: top;
-    margin: 0 1rem;
+    margin: 0; /* rely on section gap for spacing */
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
     overflow: hidden;
